@@ -1,0 +1,26 @@
+.profile {
+    display: grid;
+    place-items: center;
+}
+
+.helloText {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 50px;
+}
+
+.profile button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.profile button:active {
+    background-color: #cccccc;
+}
