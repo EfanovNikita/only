@@ -4,12 +4,15 @@
   "description": "test question",
   "entire": "index.js",
   "private": true,
+  "homepage": "https://efanovnikita.github.io/only/",
   "browserslist": ">0.25%, not dead",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
-    "build": "cross-env NODE_ENV=production webpack --mode production"
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "author": "Efanov Nikita",
   "license": "ISC",
@@ -35,6 +38,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
